@@ -1,0 +1,12 @@
+class Solution
+{
+    public static ArrayList<Integer> findUnion(int arr1[], int arr2[], int n, int m)
+    {
+        TreeSet<Integer> tr=new TreeSet<>();
+        
+        for(var i:arr1) tr.add(i);
+        for(var j:arr2) tr.add(j);
+        
+        return new ArrayList<>(tr);
+    }
+}
