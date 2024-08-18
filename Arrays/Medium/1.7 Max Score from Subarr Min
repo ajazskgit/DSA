@@ -1,0 +1,12 @@
+class Solution {
+  
+    public int pairWithMaxSum(List<Integer> arr) {
+        int n=arr.size();
+        int max=arr.get(0)+arr.get(1);
+        for(int i=1;i<n-1;i++){
+            int sum=arr.get(i)+arr.get(i+1);
+            if(sum>max) max=sum;
+        }
+        return max;
+    }
+}
